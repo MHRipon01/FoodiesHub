@@ -1,0 +1,57 @@
+{
+  "editor.fontSize": 25, // change to your font size
+  "editor.fontFamily": "Fira code", // change to your font
+  "editor.fontLigatures": true, 
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2, // fixed tab size - [ don't change ]
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+
+  "prettier.jsxSingleQuote": true, // fixed SingleQuote - [ don't change ]
+  "prettier.singleQuote": true, // fixed SingleQuote - [ don't change ]
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit", // import organize and delete unused imports automatically - [ don't change ]
+    "source.fixAll.tslint": "explicit", // import organize and delete unused imports automatically - [ don't change ]
+    "source.organizeImports": "explicit" // import organize and delete unused imports automatically - [ don't change ]
+  },
+
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "always", // when you move a file, the imports will be updated - [ don't change ]
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false, // change to true if you want to enable minimap
+  "editor.formatOnPaste": true, // change to false if you don't want to format on paste
+  "editor.formatOnType": true,
+  "editor.hover.delay": 100, // change to 500 if you want to increase the hover delay
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features" // we use vscode default formatter for html - [ don't change ]
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // we use prettier for css - [ don't change ]
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // we use prettier for javascript - [ don't change ]
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // we use prettier for javascriptreact - [ don't change ]
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // we use prettier for json - [ don't change ]
+  },
+  "window.zoomLevel": 1 // change to your zoom level
+}
