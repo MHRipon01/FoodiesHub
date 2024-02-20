@@ -156,6 +156,6 @@ $ git checkout -b <branch_name>
 
 ## 📍Step - 8
 
-🤚 See File Explorer, which has one folder named `.vscode`. There is one JSON file named `settings.json` . So this is our project workspace setup.
+🤚 See File Explorer, which has one folder named `.vscode`. There is one JSON file named `settings.json` . So this is our default project workspace setup.
 
-There I commented on which settings can be changed and which not.
+Please Don't modify any settings from there.
