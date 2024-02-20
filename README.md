@@ -70,7 +70,7 @@ Before moving we need set up your workspace.
 
 [NodeJS](https://nodejs.org/en/download/current) <br /> [Git](https://git-scm.com/downloads) <br /> [Visual Studio Code](https://code.visualstudio.com/download) <br />[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) <br />[Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) <br />[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) <br />
 
-#### 📍Step - 1
+## 📍Step - 1
 
 ```
 https://github.com/tushar-454/FoodiesHub
@@ -78,7 +78,7 @@ https://github.com/tushar-454/FoodiesHub
 
 Copy link & open on that browser where you have main GitHub account loggedin.
 
-#### 📍Step - 2
+## 📍Step - 2
 
 ![Fork](https://img001.prntscr.com/file/img001/3m0gxsE5R-We5gvBz5M3eg.png)
 
@@ -86,7 +86,7 @@ Copy link & open on that browser where you have main GitHub account loggedin.
 2. Check this is your main GitHub Account Icon.
 3. Click Fork button.
 
-#### 📍Step - 3
+## 📍Step - 3
 
 ![Create fork with description](https://img001.prntscr.com/file/img001/TVJwPTrQSv6VMGEGeMzjNA.png)
 
@@ -96,7 +96,7 @@ Copy link & open on that browser where you have main GitHub account loggedin.
 2. Checked Copy the `development` branch only
 3. Click Create fork button.
 
-#### 📍Step - 4
+## 📍Step - 4
 
 ![your account repo](https://img001.prntscr.com/file/img001/GCnnuX8eR0C8OaE-hh2ZEg.png)
 
@@ -104,14 +104,14 @@ Copy link & open on that browser where you have main GitHub account loggedin.
 2. forked from tushar-454/FoodiesHub
 3. This branch is up to date with tushar-454/FoodiesHub:development.
 
-#### 📍Step - 5
+## 📍Step - 5
 
 ![Clone repo](https://img001.prntscr.com/file/img001/w6u7u94CTc-0fSwrM1iaVg.png)
 
 1. Click `<>Code`
 2. Select HTTPS & copy the URL.
 
-#### 📍Step - 6
+## 📍Step - 6
 
 1. Now Go To your pc file explore and where you clone or store the repository.
 2. Right Click & open terminal.
@@ -119,7 +119,7 @@ Copy link & open on that browser where you have main GitHub account loggedin.
 4. Goto Repo directory using `cd .\FoodiesHub`
 5. Open with vs code using run command `code .` on terminal.
 
-#### 📍Step - 6
+## 📍Step - 6
 
 1. Install All Dependency here we are using `npm`
 
@@ -135,7 +135,7 @@ $ npm run dev
 
 3. If everything is ok, now you are rock to contribute to this project.
 
-#### 📍Step - 7
+## 📍Step - 7
 
 **⛔STOP**
 
@@ -154,7 +154,7 @@ $ git checkout -b <branch_name>
 
 2. Then you can create, add, enhance features on project & merge with development branch & create a pull request & wait for approved.
 
-#### 📍Step - 8
+## 📍Step - 8
 
 🤚 See File Explorer, which has one folder named `.vscode`. There is one JSON file named `settings.json` . So this is our project workspace setup.
 
