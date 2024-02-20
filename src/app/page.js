@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <Container>
-        <h1>FoodiesHub main contain page</h1>
+        <h1>FoodiesHub main contain page ok</h1>
       </Container>
     </main>
   );
