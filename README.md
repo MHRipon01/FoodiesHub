@@ -68,9 +68,7 @@ By carefully considering these points and leveraging the feedback from expert ra
 Before moving we need set up your workspace.
 **_Please confirm you download this extension list below_**
 
-[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-[Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+[NodeJS](https://nodejs.org/en/download/current) <br /> [Git](https://git-scm.com/downloads) <br /> [Visual Studio Code](https://code.visualstudio.com/download) <br />[ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) <br />[Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) <br />[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) <br />
 
 #### 📍Step - 1
 
@@ -155,3 +153,9 @@ $ git checkout -b <branch_name>
 ```
 
 2. Then you can create, add, enhance features on project & merge with development branch & create a pull request & wait for approved.
+
+#### 📍Step - 8
+
+🤚 See File Explorer, which has one folder named `.vscode`. There is one JSON file named `settings.json` . So this is our project workspace setup.
+
+There I commented on which settings can be changed and which not.
