@@ -1,6 +1,7 @@
 import PopularRestaurants from '@/components/home/PopularRestaurants';
 import Slider from '@/components/home/Slider';
 import PopularFoods from '@/components/home/PopularFoods';
+import Faq from '@/components/home/Faq';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Slider />
       <PopularFoods />
       <PopularRestaurants />
+      <Faq />
     </main>
   );
 }
