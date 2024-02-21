@@ -3,7 +3,7 @@ import Container from './Container';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='mt-10'>
       <Container>
         <div>
           <div className='flex  flex-col md:flex-row justify-between gap-5 md:gap-0'>
