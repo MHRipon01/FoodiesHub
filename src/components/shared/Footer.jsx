@@ -12,7 +12,7 @@ const Footer = () => {
               {/* web name */}
               <h2 className='text-2xl font-extrabold'>FoodiesHub</h2>
               <p className='font-medium'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                FoodiesHub: A Culinary Cornucopia of Restaurant Delights
               </p>
               <div className='flex gap-2'>
                 <input
@@ -25,7 +25,8 @@ const Footer = () => {
                 </button>
               </div>
               <p className='font-medium'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Welcome to FoodiesHub, where culinary wonders converge! Embark
+                on a gastronomic journey.
               </p>
             </div>
             {/* row 2 */}
