@@ -11,10 +11,16 @@ import './Header.css';
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState(false);
   return (
     <header className='sticky top-0 bg-sushi-400 text-california-50'>
-      {openDrawer && <Drawer setOpenDrawer={setOpenDrawer} user={user} />}
+      {
+        <Drawer
+          setOpenDrawer={setOpenDrawer}
+          user={user}
+          openDrawer={openDrawer}
+        />
+      }
       <Container>
         <div className='flex h-24 w-full items-center justify-between border-b-[1.5px] py-4'>
           <div className='text-2xl'>FoodiesHub</div>
@@ -70,7 +76,9 @@ const Header = () => {
           )}
 
           <div className='lg:hidden'>
-            <button onClick={() => setOpenDrawer(true)}>Open</button>
+            <button onClick={() => setOpenDrawer(true)}>
+              <GiHamburgerMenu />
+            </button>
           </div>
         </div>
       </Container>

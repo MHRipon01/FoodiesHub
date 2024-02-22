@@ -1,0 +1,17 @@
+.slide {
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: transform 0.4s ease-out;
+  transform: translateX(100%);
+}
+
+.slide.open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transform: translateX(0%);
+}
