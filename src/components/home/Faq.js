@@ -1,6 +1,5 @@
-'use client';
-import { useState } from 'react';
 import Container from '../shared/Container';
+import SingleFaq from './SingleFaq';
 
 const FAQs = [
   {
@@ -31,16 +30,6 @@ const FAQs = [
 ];
 
 const Faq = () => {
-  // State to track the open/closed state of each FAQ
-  const [faqStates, setFaqStates] = useState(Array(FAQs.length).fill(false));
-
-  // Function which will toggle the open/closed state of a FAQ item
-  const toggleFaq = (index) => {
-    const newFaqStates = [...faqStates];
-    newFaqStates[index] = !newFaqStates[index];
-    setFaqStates(newFaqStates);
-  };
-
   return (
     <div>
       <Container>
@@ -54,49 +43,11 @@ const Faq = () => {
             <div className='mx-auto max-w-md space-y-6'>
               <p className='text-gray-200'></p>
 
-              {/* FAQ items */}
-              {FAQs.map((faq, index) => (
-                <div
-                  key={index}
-                  className='mx-auto mb-5 w-full overflow-hidden border-b text-white'
-                >
-                  <div
-                    className='flex items-center'
-                    onClick={() => toggleFaq(index)}
-                  >
-                    <div className='w-10 transform border-r px-2 transition duration-1000 ease-in-out'>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='1.5'
-                        stroke='currentColor'
-                        className={`h-6 w-6 ${faqStates[index] ? 'rotate-90' : ''}`}
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M19.5 8.25l-7.5 7.5-7.5-7.5'
-                        />
-                      </svg>
-                    </div>
-                    <div className='flex items-center px-2 py-3'>
-                      <div className='mx-3 text-xl'>
-                        <button className='hover:underline'>
-                          {faq.question}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    className={`flex w-full transform border-b p-3 pb-5 transition-all duration-500 ease-in-out ${faqStates[index] ? 'h-auto opacity-100' : 'h-0 opacity-0'}`}
-                  >
-                    {faq.answer}
-                  </div>
-                </div>
+              {/* Render each FAQ using SingleFaq component */}
+              {FAQs.map((faq) => (
+                <SingleFaq key={faq.question} faq={faq} />
               ))}
-              {/* End FAQ items */}
+              {/* End rendering FAQs */}
             </div>
           </div>
         </div>
