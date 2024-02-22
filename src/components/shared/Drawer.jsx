@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import { FaSearch } from 'react-icons/fa';
+import './Header.css';
 
-const Drawer = ({ setOpenDrawer, user }) => {
+const Drawer = ({ setOpenDrawer, user, openDrawer }) => {
   return (
-    <div className='absolute right-0 min-h-[100vh] w-[70vw] bg-california-50 p-4 text-sushi-900 lg:w-[30vw]'>
+    <div
+      className={`slide ${openDrawer ? 'open' : ''} min-h-[100vh] w-[70vw]  overflow-hidden bg-california-50 p-4 text-sushi-900 lg:w-[30vw]`}
+    >
       <div className='flex justify-end'>
         <button onClick={() => setOpenDrawer(false)}>X</button>
       </div>
@@ -60,13 +64,17 @@ const Drawer = ({ setOpenDrawer, user }) => {
           <div className='my-3 flex w-full rounded-full bg-sushi-100 px-2 py-2 lg:hidden'>
             <input
               type='text'
-              placeholder='Enter Your Address Here'
+              placeholder='Enter Your Address'
               className='mx-2 w-full bg-transparent outline-none placeholder:text-sushi-800'
             />
-            <button>s</button>
+            <button>
+              <FaSearch />
+            </button>
           </div>
-          <Link href='/'>Login</Link>
-          <Link href='/'>Sign Up</Link>
+          <div className='flex flex-col px-4'>
+            <Link href='/'>Login</Link>
+            <Link href='/'>Sign Up</Link>
+          </div>
         </div>
       )}
     </div>
