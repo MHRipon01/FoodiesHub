@@ -6,7 +6,7 @@ import Upcomming from '@/components/home/Upcomming';
 
 export default function Home() {
   return (
-    <main>
+    <main className='min-h-[120vh]'>
       <Slider />
       <PopularFoods />
       <PopularRestaurants />
