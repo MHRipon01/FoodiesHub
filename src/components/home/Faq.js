@@ -31,10 +31,10 @@ const FAQs = [
 ];
 
 const Faq = () => {
-  // State to track the open/closed state of each FAQ item
+  // State to track the open/closed state of each FAQ
   const [faqStates, setFaqStates] = useState(Array(FAQs.length).fill(false));
 
-  // Function to toggle the open/closed state of a FAQ item
+  // Function which will toggle the open/closed state of a FAQ item
   const toggleFaq = (index) => {
     const newFaqStates = [...faqStates];
     newFaqStates[index] = !newFaqStates[index];
