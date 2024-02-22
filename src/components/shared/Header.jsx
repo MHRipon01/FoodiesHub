@@ -13,7 +13,7 @@ const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const [user, setUser] = useState(false);
   return (
-    <header className='sticky top-0 bg-sushi-400 text-california-50'>
+    <header className='sticky top-0 z-50 bg-sushi-400 text-california-50'>
       {
         <Drawer
           setOpenDrawer={setOpenDrawer}
@@ -22,7 +22,7 @@ const Header = () => {
         />
       }
       <Container>
-        <div className='flex h-24 w-full items-center justify-between border-b-[1.5px] py-4'>
+        <div className='flex h-24 w-full items-center justify-between py-4'>
           <div className='text-2xl'>FoodiesHub</div>
 
           <div className='hidden w-1/2 items-center rounded-full bg-sushi-300 px-4 py-2 lg:flex'>
