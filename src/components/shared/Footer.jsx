@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className='mt-10'>
       <Container>
         <div>
-          <div className='flex  flex-col md:flex-row justify-between gap-5 md:gap-0'>
+          <div className='flex  flex-col justify-between gap-5 md:flex-row md:gap-0'>
             {/* row 1 */}
-            <div className='md:w-[40%] space-y-3'>
+            <div className='space-y-3 md:w-[40%]'>
               {/* web name */}
               <h2 className='text-2xl font-extrabold'>FoodiesHub</h2>
               <p className='font-medium'>
@@ -63,16 +63,16 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className='md:mt-16 mt-10'>
+          <div className='mt-10 md:mt-16'>
             <hr className='border border-black' />
-            <div className='flex flex-col-reverse md:flex-row  text-center justify-between mt-5 md:items-center gap-2'>
+            <div className='mt-5 flex flex-col-reverse  justify-between gap-2 text-center md:flex-row md:items-center'>
               <h2 className=''>Copyright © 2024 - All right reserved</h2>
-              <div className='flex flex-wrap gap-2 md:gap-5 text-lg font-medium justify-center'>
-               <Link href={'/'}>About</Link>
-               <Link href={'/'}>blog</Link>
-               <Link href={'/'}>Contact</Link>
-               <Link href={'/'}>Faq</Link>
-               <Link href={'/'}>Faq</Link>
+              <div className='flex flex-wrap justify-center gap-2 text-lg font-medium md:gap-5'>
+                <Link href={'/'}>About</Link>
+                <Link href={'/'}>blog</Link>
+                <Link href={'/'}>Contact</Link>
+                <Link href={'/'}>Faq</Link>
+                <Link href={'/'}>Faq</Link>
               </div>
             </div>
           </div>
