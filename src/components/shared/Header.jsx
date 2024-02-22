@@ -2,10 +2,12 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa6';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdLocationPin } from 'react-icons/md';
 import Container from './Container';
 import Drawer from './Drawer';
+import './Header.css';
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -53,10 +55,15 @@ const Header = () => {
           ) : (
             <div className='hidden gap-4 lg:flex'>
               <Link href={''}>
-                <button className='px-3 py-2'>Cart</button>
+                <button className='px-3 py-2 text-xl'>
+                  <FaHeart />
+                </button>
               </Link>
 
-              <button className='px-3 py-2' onClick={() => setOpenDrawer(true)}>
+              <button
+                className='px-3 py-2 text-xl'
+                onClick={() => setOpenDrawer(true)}
+              >
                 <GiHamburgerMenu />
               </button>
             </div>

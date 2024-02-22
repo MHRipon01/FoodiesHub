@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './Header.css';
 
 const Drawer = ({ setOpenDrawer, user }) => {
   return (
