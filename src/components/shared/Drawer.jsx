@@ -5,7 +5,7 @@ import './Header.css';
 const Drawer = ({ setOpenDrawer, user, openDrawer }) => {
   return (
     <div
-      className={`slide ${openDrawer ? 'open' : ''} min-h-[100vh] w-[70vw]  overflow-hidden bg-california-50 p-4 text-sushi-900 lg:w-[30vw]`}
+      className={`slide ${openDrawer ? 'open' : ''} min-h-[100vh] w-[70vw]  overflow-hidden bg-california-50 p-4 text-sushi-700 lg:w-[30vw]`}
     >
       <div className='flex justify-end'>
         <button onClick={() => setOpenDrawer(false)}>X</button>
@@ -29,31 +29,31 @@ const Drawer = ({ setOpenDrawer, user, openDrawer }) => {
       {user ? (
         <div className='mt-6 flex flex-col'>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Profile
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Order History
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Current Orders
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Favorites
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Log Out

@@ -1,17 +1,11 @@
 .slide {
   position: fixed;
   top: 0;
-  right: 0;
-  overflow: hidden;
-  transition: transform 0.4s ease-out;
-  transform: translateX(100%);
+  right: -100%; /* Initially position off-screen to the right */
+  height: 100%; /* Ensure it covers the entire height */
+  transition: right 0.5s ease-out;
 }
 
 .slide.open {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  transform: translateX(0%);
+  right: 0; /* Position to the right when open */
 }
