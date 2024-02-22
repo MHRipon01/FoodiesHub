@@ -1,6 +1,9 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { FaSearch } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdLocationPin } from 'react-icons/md';
 import Container from './Container';
 import Drawer from './Drawer';
 
@@ -14,14 +17,18 @@ const Header = () => {
         <div className='flex h-24 w-full items-center justify-between border-b-[1.5px] py-4'>
           <div className='text-2xl'>FoodiesHub</div>
 
-          <div className='hidden w-1/2 rounded-full bg-sushi-300 px-4 py-2 lg:flex'>
-            <span>s</span>
+          <div className='hidden w-1/2 items-center rounded-full bg-sushi-300 px-4 py-2 lg:flex'>
+            <span>
+              <MdLocationPin className='text-xl' />
+            </span>
             <input
               type='text'
               placeholder='Enter Your Address Here'
               className='mx-2 w-full bg-transparent outline-none placeholder:text-california-50'
             />
-            <button>s</button>
+            <button>
+              <FaSearch className='text-xl' />
+            </button>
           </div>
 
           {!user ? (
@@ -44,13 +51,13 @@ const Header = () => {
               </Link>
             </div>
           ) : (
-            <div className='flex gap-4'>
+            <div className='hidden gap-4 lg:flex'>
               <Link href={''}>
                 <button className='px-3 py-2'>Cart</button>
               </Link>
 
               <button className='px-3 py-2' onClick={() => setOpenDrawer(true)}>
-                Open
+                <GiHamburgerMenu />
               </button>
             </div>
           )}

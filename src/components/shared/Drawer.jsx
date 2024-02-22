@@ -8,7 +8,7 @@ const Drawer = ({ setOpenDrawer, user }) => {
       </div>
 
       {user && (
-        <div className='flex items-center gap-3'>
+        <div className='mb-4 flex items-center gap-3 border-b pb-4'>
           <img
             src='https://media.newyorker.com/photos/644ab20d87ae684cabca21f2/master/pass/knight-Erling-Haaland.jpg'
             alt=''
@@ -24,19 +24,34 @@ const Drawer = ({ setOpenDrawer, user }) => {
 
       {user ? (
         <div className='mt-6 flex flex-col'>
-          <Link className='my-[2px] lg:my-1' href='/'>
+          <Link
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            href='/'
+          >
             Profile
           </Link>
-          <Link className='my-[2px] lg:my-1' href='/'>
+          <Link
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            href='/'
+          >
             Order History
           </Link>
-          <Link className='my-[2px] lg:my-1' href='/'>
+          <Link
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            href='/'
+          >
             Current Orders
           </Link>
-          <Link className='my-[2px] lg:my-1' href='/'>
+          <Link
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            href='/'
+          >
             Favorites
           </Link>
-          <Link className='my-[2px] lg:my-1' href='/'>
+          <Link
+            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-100 lg:py-1'
+            href='/'
+          >
             Log Out
           </Link>
         </div>
