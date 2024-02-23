@@ -1,0 +1,11 @@
+.slide {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially position off-screen to the right */
+  height: 100%; /* Ensure it covers the entire height */
+  transition: right 0.5s ease-out;
+}
+
+.slide.open {
+  right: 0; /* Position to the right when open */
+}
