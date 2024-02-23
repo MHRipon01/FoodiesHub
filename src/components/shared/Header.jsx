@@ -11,7 +11,7 @@ import './Header.css';
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState(true);
   return (
     <header className='sticky top-0 z-50 bg-sushi-500 text-california-50'>
       {

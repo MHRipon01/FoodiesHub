@@ -1,5 +1,7 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { FaSearch } from 'react-icons/fa';
+import { RxCross2 } from 'react-icons/rx';
 import './Header.css';
 
 const Drawer = ({ setOpenDrawer, user, openDrawer }) => {
@@ -8,15 +10,18 @@ const Drawer = ({ setOpenDrawer, user, openDrawer }) => {
       className={`slide ${openDrawer ? 'open' : ''} min-h-[100vh] w-[70vw]  overflow-hidden bg-california-50 p-4 text-sushi-700 lg:w-[30vw]`}
     >
       <div className='flex justify-end'>
-        <button onClick={() => setOpenDrawer(false)}>X</button>
+        <button onClick={() => setOpenDrawer(false)}>
+          <RxCross2 />
+        </button>
       </div>
 
       {user && (
         <div className='mb-4 flex items-center gap-3 border-b pb-4'>
-          <img
+          <Image
             src='https://media.newyorker.com/photos/644ab20d87ae684cabca21f2/master/pass/knight-Erling-Haaland.jpg'
-            alt=''
-            className='h-12 w-12 rounded-full'
+            className='h-10 w-10 rounded-full'
+            width={48}
+            height={48}
           />
 
           <div className='flex flex-col'>
