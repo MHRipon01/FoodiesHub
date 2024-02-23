@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { FiShoppingCart } from 'react-icons/fi';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
@@ -150,9 +150,11 @@ const PopularFoods = () => {
           <Slider {...settings}>
             {foods.map((food, index) => (
               <div key={index} className='box'>
-                <img
+                <Image
                   src={food.picture}
                   alt={food.name}
+                  width={300}
+                  height={300}
                   className='h-96 w-full rounded-xl object-cover'
                 />
                 <div className='overlay flex items-center justify-between rounded-xl'>
