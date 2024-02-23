@@ -10,7 +10,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always", // when you move a file, the imports will be updated - [ don't change ]
   "editor.formatOnType": true,
   "editor.formatOnSave": true,
-  "files.autoSave": "off",
 
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features" // we use vscode default formatter for html - [ don't change ]
