@@ -29,31 +29,31 @@ const Drawer = ({ setOpenDrawer, user, openDrawer }) => {
       {user ? (
         <div className='mt-6 flex flex-col'>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
+            className='rounded-md px-2 py-0.5 transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Profile
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
+            className='rounded-md px-2 py-0.5 transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Order History
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
+            className='rounded-md px-2 py-0.5 transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Current Orders
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
+            className='rounded-md px-2 py-0.5 transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Favorites
           </Link>
           <Link
-            className='rounded-md px-2 py-[2px] transition-all hover:bg-sushi-300/50 lg:py-1'
+            className='rounded-md px-2 py-0.5 transition-all hover:bg-sushi-300/50 lg:py-1'
             href='/'
           >
             Log Out
