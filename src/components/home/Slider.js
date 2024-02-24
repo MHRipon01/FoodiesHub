@@ -56,7 +56,7 @@ const Slider = () => {
         <div
           className={`flex transition-all duration-500`}
           style={{
-            transform: `translateX(-${current * 100}%)  skew(${current * 180}deg`,
+            transform: `translateX(-${current * 100}%)`,
           }}
         >
           {sliderItems.map((slide, index) => (
