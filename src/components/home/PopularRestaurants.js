@@ -18,6 +18,13 @@ const PopularRestaurants = () => {
       .then((data) => setItems(data));
   }, []);
   useEffect(() => {
+    if (window.innerWidth < 768) {
+      setSlidesPerView(1);
+    } else if (window.innerWidth < 1024) {
+      setSlidesPerView(2);
+    } else {
+      setSlidesPerView(3);
+    }
     window.addEventListener('resize', () => {
       if (window.innerWidth < 768) {
         setSlidesPerView(1);
