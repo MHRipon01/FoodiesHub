@@ -136,6 +136,8 @@ const PopularFoods = () => {
                 <Image
                   src={food.picture}
                   alt={food.name}
+                  width={300}
+                  height={200}
                   className='h-96 w-full rounded-xl object-cover'
                 />
                 <div className='overlay flex items-center justify-between rounded-xl'>
