@@ -37,7 +37,7 @@ const PopularRestaurants = () => {
     return () => window.removeEventListener('resize', () => {});
   }, []);
   return (
-    <div className='my-5'>
+    <div className='my-10'>
       <Container>
         <Title title={'Popular Restaurant'} />
         <Swiper
