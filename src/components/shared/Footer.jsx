@@ -10,17 +10,17 @@ const Footer = () => {
             {/* row 1 */}
             <div className='space-y-3 md:w-[40%]'>
               {/* web name */}
-              <h2 className='text-2xl font-extrabold'>FoodiesHub</h2>
+              <h2 className='text-2xl font-extrabold text-sushi-500'>FoodiesHub</h2>
               <p className='font-medium'>
                 FoodiesHub: A Culinary Cornucopia of Restaurant Delights
               </p>
-              <div className='flex gap-2'>
+              <div className='flex gap-1'>
                 <input
                   type='email'
                   placeholder='enter email'
-                  className=' w-[70%] rounded-md border-2 border-black py-1  pl-2'
+                  className=' w-[70%] rounded-xl border-2 border-none  border-black  bg-sushi-200 py-1 pl-2'
                 />
-                <button className='rounded-l-full rounded-r-full bg-sushi-700 px-5 py-2 text-white hover:bg-sushi-600'>
+                <button className='rounded-l-full rounded-r-full bg-sushi-600 px-5 py-2 text-white hover:bg-sushi-700'>
                   Send
                 </button>
               </div>
@@ -31,25 +31,25 @@ const Footer = () => {
             </div>
             {/* row 2 */}
             <div className='space-y-3'>
-              <h2 className='font-bold'>Navigate</h2>
+              <h2 className='font-semibold'>Navigate</h2>
               <div className='flex flex-col gap-1'>
                 <Link href={'/'}>
                   <h3>shop info</h3>
                 </Link>
                 <Link href={'/'}>
-                  <h3>shop info</h3>
+                  <h3>Shop About</h3>
                 </Link>
                 <Link href={'/'}>
-                  <h3>shop info</h3>
+                  <h3>shop Owner</h3>
                 </Link>
                 <Link href={'/'}>
-                  <h3>shop info</h3>
+                  <h3>Best Shop</h3>
                 </Link>
               </div>
             </div>
             {/* row 3 */}
             <div className='space-y-3'>
-              <h2 className='font-bold'>Contact</h2>
+              <h2 className='font-semibold'>Contact</h2>
               <div className='space-y-1'>
                 <p>foodiesHub@gmail.com</p>
                 <p>foodiesHub@gmail.com</p>
@@ -57,10 +57,13 @@ const Footer = () => {
             </div>
             {/* row 4 */}
             <div className='space-y-3'>
-              <h2 className='font-bold'>Follow Us</h2>
+              <h2 className='font-semibold'>Follow Us</h2>
               <div className='space-y-1'>
-                <h2>twitter</h2>
-                <h2>facebook</h2>
+                <h2>Twitter</h2>
+                <h2>Facebook</h2>
+                <h2>Linkedin</h2>
+                <h2>Instagram</h2>
+                <h2>Youtube</h2>
               </div>
             </div>
           </div>
