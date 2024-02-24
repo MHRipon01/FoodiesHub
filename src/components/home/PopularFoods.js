@@ -145,7 +145,7 @@ const PopularFoods = () => {
   return (
     <div className='mb-8'>
       <Container>
-        <h2 className='text-center text-5xl font-extrabold'>Popular Foods</h2>s
+        <h2 className='text-center text-5xl font-extrabold'>Popular Foods</h2>
         <div className='mt-8'>
           <Slider {...settings}>
             {foods.map((food, index) => (
