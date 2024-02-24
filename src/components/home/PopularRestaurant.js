@@ -8,13 +8,13 @@ const PopularRestaurant = ({ item }) => {
     <div>
       <Container>
         <Image
-          className='rounded-t-2xl'
           src={item?.image}
           alt='Restaurant'
           width={500}
           height={300}
+          className='h-[300px] w-full rounded-t-2xl object-cover'
         ></Image>
-        <div className='space-y-2 rounded-b-2xl bg-sushi-100 px-2 py-2'>
+        <div className='space-y-2 rounded-b-2xl bg-sushi-100 px-5 py-3'>
           <div className='flex items-center justify-between'>
             <p className='text-2xl font-semibold text-sushi-500'>
               {item?.restaurant_name}
