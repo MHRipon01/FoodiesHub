@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import Container from '../shared/Container';
+import Title from '../shared/Title';
 import './PopularFoods.css';
 
 const PopularFoods = () => {
@@ -126,8 +127,9 @@ const PopularFoods = () => {
   return (
     <div className='mb-8 mt-12'>
       <Container>
-        <h2 className='text-center text-5xl font-extrabold'>Popular Foods</h2>
-        <div className='mt-8'>
+        {/* <h2 className='text-center text-5xl font-extrabold'>Popular Foods</h2> */}
+        <Title title='Popular Foods' />
+        <div className='mt-5'>
           <Slider {...settings}>
             {foods.map((food, index) => (
               <div key={index} className='box'>
