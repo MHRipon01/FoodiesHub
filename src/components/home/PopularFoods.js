@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import Container from '../shared/Container';
 import Title from '../shared/Title';
 import './PopularFoods.css';
+import Image from 'next/image';
 
 const PopularFoods = () => {
   var settings = {
@@ -132,7 +133,7 @@ const PopularFoods = () => {
           <Slider {...settings}>
             {foods.map((food, index) => (
               <div key={index} className='box'>
-                <img
+                <Image
                   src={food.picture}
                   alt={food.name}
                   className='h-96 w-full rounded-xl object-cover'
