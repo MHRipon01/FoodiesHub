@@ -1,7 +1,6 @@
 'use client';
 import { useCallback, useState } from 'react';
 import { IoChevronBackOutline } from 'react-icons/io5';
-import SingleSlide from './SingleSlide';
 
 const sliderItems = [
   {
@@ -56,11 +55,11 @@ const Slider = () => {
         <div
           className={`flex transition-all duration-500`}
           style={{
-            transform: `translateX(-${current * 100}%)  skew(${current * 180}deg`,
+            transform: `translateX(-${current * 100}%)`,
           }}
         >
           {sliderItems.map((slide, index) => (
-            <SingleSlide key={index} slide={slide} />
+            <SinglclseSlide key={index} slide={slide} />
           ))}
         </div>
         {/* dot controls */}
