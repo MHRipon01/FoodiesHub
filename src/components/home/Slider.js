@@ -1,6 +1,7 @@
 'use client';
 import { useCallback, useState } from 'react';
 import { IoChevronBackOutline } from 'react-icons/io5';
+import SingleSlide from './SingleSlide';
 
 const sliderItems = [
   {
@@ -59,7 +60,7 @@ const Slider = () => {
           }}
         >
           {sliderItems.map((slide, index) => (
-            <SinglclseSlide key={index} slide={slide} />
+            <SingleSlide key={index} slide={slide} />
           ))}
         </div>
         {/* dot controls */}
