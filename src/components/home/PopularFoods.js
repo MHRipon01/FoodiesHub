@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { FiShoppingCart } from 'react-icons/fi';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick-theme.css';
@@ -7,7 +8,6 @@ import 'slick-carousel/slick/slick.css';
 import Container from '../shared/Container';
 import Title from '../shared/Title';
 import './PopularFoods.css';
-import Image from 'next/image';
 
 const PopularFoods = () => {
   var settings = {
