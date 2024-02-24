@@ -127,7 +127,6 @@ const PopularFoods = () => {
   return (
     <div className='mb-8 mt-12'>
       <Container>
-        {/* <h2 className='text-center text-5xl font-extrabold'>Popular Foods</h2> */}
         <Title title='Popular Foods' />
         <div className='mt-5'>
           <Slider {...settings}>
